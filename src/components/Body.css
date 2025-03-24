@@ -1,0 +1,84 @@
+.landing-page img{
+    width:100%;
+    height: auto;
+    object-fit: auto;
+}
+.option {
+    display:flex;
+    justify-content: center;
+    gap:150px;
+}
+.option img{
+    width:200px;
+    height:auto;
+}
+.option p{
+    text-align: center;
+}
+.discounts h1{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.discounts-container{
+    display: flex;
+    justify-content: center;
+    gap:150px;
+}
+.discounts-container h4{
+    /* text-align: center; */
+    margin-top: 5px;
+}
+.discount-item{
+    width: 200px;
+    height: auto;
+}
+.discounts-container img{
+    width: 200px;
+    height: auto;
+}
+.discounts-container p{
+    display: inline;
+}
+
+.popular h1{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.popular_product{
+    display: flex;
+    justify-content: center;
+    gap:150px;
+
+}
+.popular_product-item{
+    width: 200px;
+    height: auto;
+}
+.popular_product-item img{
+    width: 200px;
+    height: auto;
+}
+.second_landing img{
+    margin-top: 50px;
+    width:90%;
+    height: auto;
+    margin-left: 75px;
+}
+.Feature_Product h1{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.Feature_Product_container {
+    display: flex;
+    justify-content: center;
+    gap:150px;
+}
+.Feature_Product_item {
+    width: 200px;
+    height: auto;
+}
+.Feature_Product_item img{
+    width: 200px;
+    height: auto;
+}

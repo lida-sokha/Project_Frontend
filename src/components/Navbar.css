@@ -1,0 +1,163 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header background */
+  header {
+    background-color: #1a1a1a;
+  }
+  
+  /* Top bar (logo, search, icons) */
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px 20px; */
+    background-color: white;
+  }
+  
+  /* Logo container */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  /* TC Box (TC + Computer label) */
+  .tc-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Large TC text */
+  .tc-text {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  /* Black "Computer" label */
+  .label {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 4px;
+  }
+  
+  /* "TC COMPUTER" text */
+  .brand-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Search bar */
+  .search-bar {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 40%;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .search-bar button {
+    background-color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .search-bar i {
+    color: gray;
+  }
+  
+  /* Icons (Cart & Account) */
+  .icons {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .icon i {
+    font-size: 20px;
+  }
+  
+  /* Navigation bar */
+  nav {
+    background-color: #0099ff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+/* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown menu */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 300px;
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of links on hover */
+.dropdown-content a:hover {
+    background-color: #0099ff;
+    color: white;
+}
+
+/* Show the dropdown menu when hovering over the parent link */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
