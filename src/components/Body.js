@@ -84,19 +84,19 @@ function Body() {
                         <p>$149.00</p>
                     </div>
                     <div className="Feature_Product_item">
-                        <img src="fontend\PRO-MP275Q-330x409.jpg"/>
-                        <p style={{color:"gray"}}>MSI PRO MP275Q ( 27" / QHD / 100Hz / Built in Speaker )</p>
-                        <p>$149.00</p>
+                        <img src="fontend\G55-330x409.jpg"/>
+                        <p style={{color:"gray"}}>KEYBOARD ONIKUMA G55 MECHANICAL 61 Keys GAMING RGB</p>
+                        <p>$20.00</p>
                     </div>
                     <div className="Feature_Product_item">
-                        <img src="fontend\PRO-MP275Q-330x409.jpg"/>
-                        <p style={{color:"gray"}}>MSI PRO MP275Q ( 27" / QHD / 100Hz / Built in Speaker )</p>
-                        <p>$149.00</p>
+                        <img src="fontend\Zotact-RT-330x409.jpg"/>
+                        <p style={{color:"gray"}}>ZOTAC GAMING GeForce RTX 5080 SOLID GDDR7 </p>
+                        <p>$1,379.00</p>
                     </div>
                     <div className="Feature_Product_item">
-                        <img src="fontend\PRO-MP275Q-330x409.jpg"/>
-                        <p style={{color:"gray"}}>MSI PRO MP275Q ( 27" / QHD / 100Hz / Built in Speaker )</p>
-                        <p>$149.00</p>
+                        <img src="fontend/LOQ-15IAX9-330x409.jpg"/>
+                        <p style={{color:"gray"}}>Lenovo LOQ 15ARP9 ( R7 7435HS / 24GB / SSD 512GB PCIE / RTX4060 8GB / 15.6"FHD,144Hz )</p>
+                        <p>$1,139.00</p>
                     </div>
                 </div>
             </div>
