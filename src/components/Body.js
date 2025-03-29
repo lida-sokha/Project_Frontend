@@ -4,9 +4,9 @@ import React from "react";
 function Body() {
     return (
         <div class="landing-page">
-            <img src="fontend/fwebp.webp" alt="Image" />
+            <img src="fontend/fwebp.webp" alt="Image"/>
             <div class="option">
-                <div>
+                <div >
                     <img src="fontend/h175.png" alt="Image" />
                     <p>Laptop</p>
                 </div>
@@ -19,25 +19,18 @@ function Body() {
                     <p>Monitor</p>
                 </div>
                 <div>
-                    <img src="fontend/keyboard_3.jpg" alt="Image" style={{ marginTop: "20px", marginBottom: "35px" }}/>
+                    <img src="fontend/keyboard_3.jpg" alt="Image" style={{ marginTop: "40px", marginBottom: "35px" }}/>
                     <p>Keyboard</p>
                 </div>
             </div>
             <div class="discounts">
-                <h1>Discounts</h1>
+                <h1 className="text-2xl font-bold">Discounts</h1>
                 <div class="discounts-container ">
-                    <div class="flex flex-col items-center p-7 rounded-2xl">
-                    <div>
-                        <img class="size-48 shadow-xl rounded-md" alt="" src="fontend\MAC-14-M4-black-330x409 (1).jpg" />
-                    </div>
-                        <div class="flex flex-col items-center ">
-                            <span class="text-2xl font-medium flex-row">MacBook Pro 14 ( M4 / 16GB / SSD 512GB / 14.2")</span>
-                            <div className="flex flex-row gap-2"> 
-                                <span style={{ color: "red"}} >$1599.00</span>
-                                <span style={{ textDecoration: "line-through "}} >$1639.00</span>
-                            </div>
+                    <div className="discount-item">
+                            <img src="fontend\MAC-14-M4-black-330x409.jpg" />
+                            <h4>MacBook Air 13 ( M2 Chip / 16GB / SSD 256GB /13.6")</h4>
+                            <p style={{ color: "red"}}>$919.00</p> <p style={{ textDecoration: "line-through"}}>$1049.00</p>
                         </div>
-                    </div>
                     <div className="discount-item">
                         <img src="fontend\mac M2 Grey-330x409.jpg" style={{width: "180px",marginTop: "30px"}}/>
                         <h4>MacBook Air 13 ( M2 Chip / 16GB / SSD 256GB /13.6")</h4>
@@ -56,7 +49,7 @@ function Body() {
                 </div>
             </div>
             <div className="popular">
-                <h1>Most popular product</h1>
+                <h1  className="text-2xl font-bold">Most popular product</h1>
                 <div className="popular_product">
                         <div className="popular_product-item">
                             <img src="fontend/Mac-Air-M3-Grey-330x409.jpg"/>
@@ -84,7 +77,7 @@ function Body() {
                 <img src="fontend/250221 TUF Gaming A14-915x420.jpg"/>
             </div>
             <div className="Feature_Product">
-                <h1>Feature Product</h1>
+                <h1 className="text-2xl font-bold">Feature Product</h1>
                 <div className="Feature_Product_container">
                     <div className="Feature_Product_item">
                         <img src="fontend\PRO-MP275Q-330x409.jpg"/>
@@ -108,7 +101,53 @@ function Body() {
                     </div>
                 </div>
             </div>
-        </div>
+            <div className="New_arrival">
+                <h1 className="text-2xl font-bold ]">New arrival</h1>
+                <div class="New_arrival_container grid grid-cols-3 gap-4 ml-[50px] mt-[50px]">
+                <div class="row-span-10 bg-gray-100 p-6 h-[600px] flex flex-col justify-end relative overflow-hidden">
+                            <img 
+                                src="fontend/fwebp.webp" 
+                                alt="ROG Flow Z13" 
+                                class="absolute inset-0 w-full h-full object-cover z-0"
+                            />
+                            
+                            <div class="z-10 relative"> 
+                                <h2 class="text-2xl font-bold mb-2">ROG Flow Z13 (2025)</h2>
+                                <h3 class="text-xl mb-4">Immersion Touchscreen Display</h3>
+                                <p class="mb-6">on opening a Creative</p>
+                                <button class="bg-black text-white px-6 py-2 hover:bg-gray-800 transition">Shop Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-span-1 row-span-1 space-y-4">
+                            <div class="bg-gray-200 p-4 h-[300px]">
+                                <h3 class="font-bold text-lg">Geforce RTX 5070</h3>
+                                <p class="text-sm mb-4">High levels with low grounding, and high level space</p>
+                                <button class="border border-black px-4 py-1 text-sm">Shop Now</button>
+                            </div>
+
+                            <div class="row-span-2 flex gap-4">
+                                <div class="flex-1 bg-gray-300 p-4 h-[280px]"> 
+                                    <h3 class="font-bold text-lg">Mouse</h3>
+                                    <p class="text-sm mb-4">Home Route1/6/Fro.8K</p>
+                                    <button class="border border-black px-4 py-1 text-sm">Shop Now</button>
+                                </div>
+                                
+                                <div class="flex-1 bg-gray-400 p-4 h-[280px]"> 
+                                    <h3 class="font-bold text-lg">Keyboard</h3>
+                                    <p class="text-sm mb-4">Reset distribution via the</p>
+                                    <button class="border border-black px-4 py-1 text-sm">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-span-10 bg-gray-100 p-6 h-[600px] mr-[50px]">
+                                <h3 class="font-bold text-lg">Built PC NOW!</h3>
+                                <p class="text-sm mb-4">Can cutomize what you want.</p>
+                                <button class="border border-black px-4 py-1 text-sm">Shop Now</button>
+                            </div>
+                    </div>
+            </div>
+    </div>
     );
 }
 export default Body;
