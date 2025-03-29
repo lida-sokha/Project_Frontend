@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link } from "react-router-dom"; // Use Link instead of <a>
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCartShopping, faSearch } from "@fortawesome/free-solid-svg-icons";
+
 function Navbar() {
     return (
         <>
@@ -16,39 +17,42 @@ function Navbar() {
                         <div className="brand-name">TC COMPUTER</div>
                     </div>
 
-                     {/* Search Bar (Centered) */}
+                    {/* Search Bar (Centered) */}
                     <div className="search-bar">
                         <input type="text" placeholder="Searching product..." />
                         <button type="submit"><FontAwesomeIcon icon={faSearch} /></button>
                     </div>
+
                     {/* Icons (Right Side) */}
-                <div className="icons">
-                    <div className="icon">
-                    <FontAwesomeIcon icon={faCartShopping} size="xl"/>
-                        <span>Cart</span>
+                    <div className="icons">
+                        <div className="icon">
+                            <FontAwesomeIcon icon={faCartShopping} size="xl"/>
+                            <span>Cart</span>
+                        </div>
+                        <div className="icon">
+                            <FontAwesomeIcon icon={faUser} size="xl" />
+                            <span>Account</span>
+                        </div>
                     </div>
-                    <div className="icon">
-                    <FontAwesomeIcon icon={faUser}	size="xl" />
-                        <span>Account</span>
-                    </div>
-                </div>
                 </div> {/* Closed .top-bar div */}
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li class="dropdown"><a href="#">Shop ▼</a>
-                        <ul class="dropdown-content">
-                            <li><a href="/laptop">Laptop</a></li>
-                            <li><a href="/desktop">Desktop</a></li>
-                            <li><a href="/monitor">Monitor</a></li>
-                            <li><a href="/keyboard">Keyboard</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">New Arrivals</a></li>
-                    <li><a href="#">Discounts</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
+
+                {/* Navigation Bar */}
+                <nav>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li className="dropdown"><Link to="#">Shop ▼</Link>
+                            <ul className="dropdown-content">
+                                <li><Link to="/laptop">Laptop</Link></li>
+                                <li><Link to="/desktop">Desktop</Link></li>
+                                <li><Link to="/monitor">Monitor</Link></li>
+                                <li><Link to="/keyboard">Keyboard</Link></li>
+                            </ul>
+                        </li>
+                        <li><Link to="/new-arrivals">New Arrivals</Link></li>
+                        <li><Link to="/discounts">Discounts</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
+                    </ul>
+                </nav>
             </header> {/* Closed header */}
         </>
     );

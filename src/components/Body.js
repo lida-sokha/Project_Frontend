@@ -1,4 +1,5 @@
 import { width } from "@fortawesome/free-solid-svg-icons/fa0";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from "react";
 function Body() {
     return (
@@ -24,11 +25,18 @@ function Body() {
             </div>
             <div class="discounts">
                 <h1>Discounts</h1>
-                <div class="discounts-container">
-                    <div class="discount-item">
-                        <img src="fontend/MAC-14-M4-black-330x409 (1).jpg" style={{marginBottom: "5px"}}/>
-                        <h4>MacBook Pro 14 ( M4 / 16GB / SSD 512GB / 14.2")</h4>
-                        <p style={{ color: "red"}}>$1599.00</p> <p style={{ textDecoration: "line-through"}}>$1639.00</p>
+                <div class="discounts-container ">
+                    <div class="flex flex-col items-center p-7 rounded-2xl">
+                    <div>
+                        <img class="size-48 shadow-xl rounded-md" alt="" src="fontend\MAC-14-M4-black-330x409 (1).jpg" />
+                    </div>
+                        <div class="flex flex-col items-center ">
+                            <span class="text-2xl font-medium flex-row">MacBook Pro 14 ( M4 / 16GB / SSD 512GB / 14.2")</span>
+                            <div className="flex flex-row gap-2"> 
+                                <span style={{ color: "red"}} >$1599.00</span>
+                                <span style={{ textDecoration: "line-through "}} >$1639.00</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="discount-item">
                         <img src="fontend\mac M2 Grey-330x409.jpg" style={{width: "180px",marginTop: "30px"}}/>
