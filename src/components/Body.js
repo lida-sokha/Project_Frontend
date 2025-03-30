@@ -104,47 +104,93 @@ function Body() {
             <div className="New_arrival">
                 <h1 className="text-2xl font-bold ]">New arrival</h1>
                 <div class="New_arrival_container grid grid-cols-3 gap-4 ml-[50px] mt-[50px]">
-                <div class="row-span-10 bg-gray-100 p-6 h-[600px] flex flex-col justify-end relative overflow-hidden">
+                <div class="relative w-full overflow-hidden bg-black">
+                    <img 
+                        src="fontend\fwebp.webp" 
+                        alt="ROG Flow Z13" 
+                        class="absolute min-w-full min-h-full object-fit " 
+                    />
+                    
+                    <div class="absolute  flex flex-col justify-end p-8 text-white z-10">
+                        <div class="mt-auto mb-8">
+                        <h2 class="text-2xl md:text-3xl font-bold">ROG Flow Z13 (2025)</h2>
+                        <p class="text-lg md:text-xl mb-6">Immersion Touchscreen Display</p>
+                        <p class="text-sm md:text-base mb-8">on opening a Creative</p>
+                        <button class="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-full font-bold transition-colors">
+                            Shop Now
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-span-1 row-span-1">
+                        <div class="bg-gray-200 h-[200px] relative overflow-hidden mb-10">
                             <img 
-                                src="fontend/fwebp.webp" 
-                                alt="ROG Flow Z13" 
-                                class="absolute inset-0 w-full h-full object-cover z-0"
+                            src="fontend/geforce-rtx-5070-3840x2160.jpg" 
+                            alt="Geforce RTX 5070"
+                            class="absolute inset-0 w-full h-full object-cover" 
                             />
                             
-                            <div class="z-10 relative"> 
-                                <h2 class="text-2xl font-bold mb-2">ROG Flow Z13 (2025)</h2>
-                                <h3 class="text-xl mb-4">Immersion Touchscreen Display</h3>
-                                <p class="mb-6">on opening a Creative</p>
-                                <button class="bg-black text-white px-6 py-2 hover:bg-gray-800 transition">Shop Now</button>
+                            <div class="relative z-10 p-4 h-full flex flex-col justify-start text-white">
+                            <h3 class="font-bold text-lg">Geforce RTX 5070</h3>
+                            <p class="text-sm mb-4">High levels with low grounding, and high level space</p>
+                            <button class="bg-white text-black hover:bg-gray-200 px-3 py-2 rounded-full font-bold transition-colors text-sm w-fit">
+                                Shop Now
+                            </button>
                             </div>
                         </div>
-
-                        <div class="col-span-1 row-span-1 space-y-4">
-                            <div class="bg-gray-200 p-4 h-[300px]">
-                                <h3 class="font-bold text-lg">Geforce RTX 5070</h3>
-                                <p class="text-sm mb-4">High levels with low grounding, and high level space</p>
-                                <button class="border border-black px-4 py-1 text-sm">Shop Now</button>
-                            </div>
-
-                            <div class="row-span-2 flex gap-4">
-                                <div class="flex-1 bg-gray-300 p-4 h-[280px]"> 
-                                    <h3 class="font-bold text-lg">Mouse</h3>
-                                    <p class="text-sm mb-4">Home Route1/6/Fro.8K</p>
-                                    <button class="border border-black px-4 py-1 text-sm">Shop Now</button>
-                                </div>
+                        <div class="row-span-2 flex gap-4">
+                            <div class="flex-1 relative overflow-hidden shadow-md h-[280px] bg-black">
+                                <img 
+                                src="fontend\https___medias-p1.phoenix.razer.com_sys-master-phoenix-images-container_h23_hee_9821719920670_241001-basilisk-v3-pro-35k-1500x1000-2.jpg" 
+                                alt="Razer Basilisk V3 Pro" 
+                                class="absolute inset-0 w-full h-full object-cover"
+                                />
                                 
-                                <div class="flex-1 bg-gray-400 p-4 h-[280px]"> 
-                                    <h3 class="font-bold text-lg">Keyboard</h3>
-                                    <p class="text-sm mb-4">Reset distribution via the</p>
-                                    <button class="border border-black px-4 py-1 text-sm">Shop Now</button>
+                                <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent bg-black">
+                                <h3 class="font-bold text-lg text-white">Razer Basilisk V3 Pro</h3>
+                                <p class="text-sm text-white/90 mb-3">35K DPI Optical Sensor</p>
+                                <button class="bg-white text-black hover:bg-gray-200 px-4 py-1.5 rounded-full text-sm transition-colors font-bold">
+                                    Shop Now
+                                </button>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-1 relative  overflow-hidden shadow-md h-[280px] bg-black">
+                                <img 
+                                src="fontend\keyboard.png" 
+                                alt="Razer Basilisk V3 Pro" 
+                                class="absolute inset-0 w-full h-full object-cover mt-[-30px]"
+                                />
+                                
+                                <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent bg-black">
+                                <h3 class="font-bold text-lg text-white">Keyboard</h3>
+                                <p class="text-sm text-white/90 mb-3">Razer BlackWidow V4 Pro</p>
+                                <button class="bg-white text-black hover:bg-gray-200 px-4 py-1.5 rounded-full text-sm font-bold transition-colors">
+                                    Shop Now
+                                </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="row-span-10 bg-gray-100 p-6 h-[600px] mr-[50px]">
-                                <h3 class="font-bold text-lg">Built PC NOW!</h3>
-                                <p class="text-sm mb-4">Can cutomize what you want.</p>
-                                <button class="border border-black px-4 py-1 text-sm">Shop Now</button>
+                        </div>
+                        <div class="row-span-10 relative  overflow-hidden bg-black h-[525px] mr-[50px]">
+                            <img 
+                            src="fontend\pc-gaming-computer-pc-cases-technology-wallpaper-thumb.jpg" 
+                            alt="Custom Gaming PC" 
+                            class="absolute inset-0 w-full h-full object-cover"
+                            />
+                            
+                            <div class="absolute inset-0 flex flex-col justify-end p-8 text-white z-10">
+                            <div class="mt-auto mb-8">
+                                <h2 class="text-2xl md:text-3xl font-bold">Built PC NOW!</h2>
+                                <p class="text-lg md:text-xl mb-6">Customize Your Dream Machine</p>
+                                <p class="text-sm md:text-base mb-8">Configure what you want</p>
+                                <button class="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-full font-bold transition-colors">
+                                Shop Now
+                                </button>
                             </div>
+                            </div>
+                        </div>
                     </div>
             </div>
     </div>
