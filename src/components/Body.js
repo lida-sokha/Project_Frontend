@@ -1,5 +1,7 @@
 import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTruck, faHeadset, faStore } from '@fortawesome/free-solid-svg-icons';
 import React from "react";
 function Body() {
     return (
@@ -192,6 +194,71 @@ function Body() {
                             </div>
                         </div>
                     </div>
+            </div>
+            <div className="DeliveryInfo">
+                <div className="mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-5">
+                    {/* Free Delivery */}
+                    <div className="flex flex-col items-center text-center p-4 ">
+                    <div className="relative w-20 h-20 mb-3">
+                        {/* Outer gray circle */}
+                        <div className="absolute inset-0 bg-gray-500 rounded-full"></div>
+                        
+                        {/* Inner black circle with centered icon */}
+                        <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center">
+                            <FontAwesomeIcon 
+                            icon={faTruck} 
+                            className="text-white text-3xl z-10"
+                            />
+                        </div>
+                        </div>
+                    </div>
+                    <h3 className="font-bold text-lg mb-1">FREE AND FAST DELIVERY</h3>
+                    <p className="text-gray-600">Free delivery for all orders over $140</p>
+                    </div>
+                    {/* Customer Service */}
+                    <div className="flex flex-col items-center text-center p-4">
+                        <div className="relative w-20 h-20 mb-3">
+                            {/* Outer gray circle */}
+                            <div className="absolute inset-0 bg-gray-500 rounded-full"></div>
+                            
+                            {/* Inner black circle with centered icon */}
+                            <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center">
+                                <FontAwesomeIcon 
+                                icon={faHeadset} 
+                                className="text-white text-3xl z-10"
+                                />
+                            </div>
+                            </div>
+                        </div>
+                        <h3 className="font-bold text-lg mb-1">24/7 CUSTOMER SERVICE</h3>
+                        <p className="text-gray-600">Friendly 24/7 customer support</p>
+                        </div>
+
+                    {/* Price Promise */}
+                    <div className="flex flex-col items-center text-center p-4 ">
+                    <div className="relative w-20 h-20 mb-3">
+                        {/* Outer gray circle */}
+                        <div className="absolute inset-0 bg-gray-500 rounded-full"></div>
+                        
+                        {/* Inner black circle with centered icon */}
+                        <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center">
+                            <FontAwesomeIcon 
+                            icon={faStore} 
+                            className="text-white text-3xl z-10"
+                            />
+                        </div>
+                        </div>
+                    </div>
+                    <h3 className="font-bold text-lg mb-1">SAME GREAT PRICE</h3>
+                    <p className="text-gray-600">
+                        Online and In–Store.<br/>
+                        We Don't Increase Prices: Same Great Deals, Always.
+                    </p>
+                    </div>
+                </div>
             </div>
     </div>
     );

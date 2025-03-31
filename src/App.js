@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import './components/Navbar.css';
 import Body from "./components/Body";
 import './components/Body.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Body />} />  {/* Define the home page route */}
           {/* Add other pages if needed */}
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
