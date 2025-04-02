@@ -126,7 +126,7 @@ function Body() {
                     </div>
 
                     <div class="col-span-1 row-span-1">
-                        <div class="bg-gray-200 h-[200px] relative overflow-hidden mb-10">
+                        <div class="bg-gray-200 h-[200px] relative overflow-hidden mb-5">
                             <img 
                             src="fontend/geforce-rtx-5070-3840x2160.jpg" 
                             alt="Geforce RTX 5070"
@@ -175,7 +175,7 @@ function Body() {
                             </div>
                         </div>
                         </div>
-                        <div class="row-span-10 relative  overflow-hidden bg-black h-[525px] mr-[50px]">
+                        <div class="row-span-10 relative  overflow-hidden bg-black h-[500px] mr-[50px]">
                             <img 
                             src="fontend\pc-gaming-computer-pc-cases-technology-wallpaper-thumb.jpg" 
                             alt="Custom Gaming PC" 
@@ -196,7 +196,7 @@ function Body() {
                     </div>
             </div>
             <div className="DeliveryInfo">
-                <div className="mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div className="mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-5 mb-20">
                     {/* Free Delivery */}
                     <div className="flex flex-col items-center text-center p-4 ">
                     <div className="relative w-20 h-20 mb-3">

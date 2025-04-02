@@ -39,7 +39,8 @@ const Footer = () => {
           <h2 className="text-lg font-semibold text-white">Payments</h2>
           <div className="space-y-2">
             <h3 className="font-medium">A.B.A. PRIMMINS</h3>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 items-center">
+              <img src="fontend\aba.png" alt="A.B.A. PRIMMINS" className="w-10 h-10" />	
               <span className="font-bold">VISA</span>
               <span className="font-bold">KIBER</span>
             </div>
