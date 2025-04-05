@@ -89,24 +89,6 @@
     color: gray;
   }
   
-  /* Icons (Cart & Account) */
-  .icons {
-    display: flex;
-    gap: 30px;
-  }
-  
-  .icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    margin-right: 20px;
-  }
-  
-  .icon i {
-    font-size: 20px;
-  }
-  
   /* Navigation bar */
   nav {
     background-color: #0099ff;
@@ -164,4 +146,40 @@
 /* Show the dropdown menu when hovering over the parent link */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+/* Icon container */
+.icons {
+  display: flex;
+  gap: 60px; /* Adjust spacing between icons */
+  align-items: center;
+}
+
+/* Individual icon wrapper */
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Link styling */
+.nav-icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Icon styling */
+.nav-icon {
+  font-size: 1.8rem; /* Exact size control */
+  width: 1em; /* Ensures consistent width */
+  height: 1em; /* Ensures consistent height */
+}
+
+/* Label styling */
+.nav-icon-label {
+  font-size: 1rem;
+  margin-top: 4px;
+  text-align: center;
 }

@@ -96,7 +96,7 @@ function Body() {
                         <p style={{color:"gray"}}>ZOTAC GAMING GeForce RTX 5080 SOLID GDDR7 </p>
                         <p>$1,379.00</p>
                     </div>
-                    <div className="Feature_Product_item">
+                    <div className="Feature_Product_item ">
                         <img src="fontend/LOQ-15IAX9-330x409.jpg"/>
                         <p style={{color:"gray"}}>Lenovo LOQ 15ARP9 ( R7 7435HS / 24GB / SSD 512GB PCIE / RTX4060 8GB / 15.6"FHD,144Hz )</p>
                         <p>$1,139.00</p>
