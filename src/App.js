@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Cart from './components/Cart';
@@ -6,19 +6,42 @@ import './components/Navbar.css';
 import Body from "./components/Body";
 import './components/Body.css';
 import Footer from './components/Footer';
+import Login from './components/Login';
+import Signup from './components/Signup';
+
+// Layout for auth pages (without header/footer)
+const AuthLayout = () => (
+  <div className="auth-layout">
+    <Routes>
+      <Route index element={<Login />} />
+      <Route path="login" element={<Login />} />
+      <Route path="signup" element={<Signup />} />
+    </Routes>
+  </div>
+);
 
 function App() {
   return (
-    <Router> {/* Wrap everything inside BrowserRouter */}
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Body />} />  {/* Define the home page route */}
-          {/* Add other pages if needed */}
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-        <Footer />
-      </div>
+    <Router>
+      <Routes>
+        {/* Main routes with Navbar and Footer */}
+        <Route path="/*" element={
+          <>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Body />} />
+              <Route path="/cart" element={<Cart />} />
+              {/* Add other routes that need Navbar/Footer */}
+            </Routes>
+            <Footer />
+          </>
+        } />
+
+        {/* Auth routes without Navbar/Footer */}
+        <Route path="/auth/*" element={<AuthLayout />} />
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<Signup />} />
+      </Routes>
     </Router>
   );
 }

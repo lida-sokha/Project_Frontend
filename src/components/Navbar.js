@@ -3,10 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Link } from "react-router-dom"; // Use Link instead of <a>
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCartShopping, faSearch } from "@fortawesome/free-solid-svg-icons";
-import { useCart } from '../context/CartContext';
 
 function Navbar() {
-    const {totalItems} = useCart();
     return (
         <>
             <header>
@@ -30,16 +28,16 @@ function Navbar() {
                     {/* Icons (Right Side) */}
                     <div className="icons">
                     <div className="icon">
-                        <Link to="/cart" className="nav-icon-link">  {/* Changed to lowercase "/cart" */}
+                        <Link to="/Cart" className="nav-icon-link">  {/* Changed to lowercase "/cart" */}
                         <FontAwesomeIcon icon={faCartShopping} className="nav-icon" />
-                        <span className="nav-icon-label">Cart  ({totalItems})</span>
+                        <span className="nav-icon-label">Cart  </span>
                         </Link>
                     </div>
                     <div className="icon mr-4">
-                        <Link to="/account" className="nav-icon-link">  {/* Added Link for consistency */}
-                        <FontAwesomeIcon icon={faUser} className="nav-icon" />
-                        <span className="nav-icon-label">Account</span>
-                        </Link>
+                    <Link to="/auth/login" className="nav-icon-link">
+                    <FontAwesomeIcon icon={faUser} className="nav-icon" />
+                    <span className="nav-icon-label">Account</span>
+                    </Link>
                     </div>
                     </div>
                 </div> {/* Closed .top-bar div */}
