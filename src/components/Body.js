@@ -9,22 +9,44 @@ function Body() {
         <div class="landing-page">
             <img src="fontend/fwebp.webp" alt="Image"/>
             <div class="option">
-                <div >
-                    <img src="fontend/h175.png" alt="Image" />
+            <Link to="LaptopPage" className="category-card">
+                <div>
+                    <img src="fontend/h175.png" alt="Laptops" />
                     <p>Laptop</p>
                 </div>
+                </Link>
+                <Link to="/products/desktops" className="category-card">
                 <div>
-                    <img src="fontend/custom-gaming-pc.png" style={{ width: "150px" }} alt="Image" />
+                    <img 
+                    src="fontend/custom-gaming-pc.png" 
+                    style={{ width: "150px" }} 
+                    alt="Desktops" 
+                    />
                     <p>Desktop</p>
                 </div>
-                <div>
+                </Link>
+                {/* <div>
                     <img src="fontend/monitor_landing.png" alt="Image" />
                     <p>Monitor</p>
-                </div>
+                </div> */}
+                <Link to="/products/monitors" className="category-card">
                 <div>
-                    <img src="fontend/keyboard_3.jpg" alt="Image" style={{ marginTop: "40px", marginBottom: "35px" }}/>
+                    <img src="fontend/monitor_landing.png" alt="Monitors" />
+                    <p>Monitor</p>
+                </div>
+                </Link>
+
+                 {/* Keyboard Category */}
+                <Link to="/products/keyboards" className="category-card">
+                <div>
+                    <img 
+                    src="fontend/keyboard_3.jpg" 
+                    alt="Keyboards" 
+                    style={{ marginTop: "40px", marginBottom: "35px" }}
+                    />
                     <p>Keyboard</p>
                 </div>
+                </Link>
             </div>
             <div class="discounts">
                 <h1 className="text-2xl font-bold">Discounts</h1>

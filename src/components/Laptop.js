@@ -1,9 +1,6 @@
-import { width } from "@fortawesome/free-solid-svg-icons/fa0";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTruck, faHeadset, faStore } from '@fortawesome/free-solid-svg-icons';
 import React from "react";
-function laptop_page() {
+import { Link } from 'react-router-dom'; 
+function Laptop() {
     return (
         <div class="landing-page">
             <img src="1.png" alt="Image"/>
@@ -85,4 +82,4 @@ function laptop_page() {
         </div>
     );
 }
-export default laptop_page;
+export default Laptop;
