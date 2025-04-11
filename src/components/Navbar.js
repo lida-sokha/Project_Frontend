@@ -16,7 +16,7 @@ function Navbar() {
                     </Link>
                             <div className="label">Computer</div>
                         </div>
-                        <div className="brand-name">TC COMPUTER</div>
+                        <div className="brand-name"></div>
                     </div>
 
                     {/* Search Bar (Centered) */}
@@ -48,13 +48,13 @@ function Navbar() {
                         <li><Link to="/">Home</Link></li>
                         <li className="dropdown"><Link to="#">Shop </Link>
                             <ul className="dropdown-content">
-                                <li><Link to="/laptop_page">Laptop</Link></li>
-                                <li><Link to="/desktop">Desktop</Link></li>
-                                <li><Link to="/monitor">Monitor</Link></li>
+                                <li><Link to="/laptop">Laptop</Link></li>
+                                <li><Link to="/Desktop">Desktop</Link></li>
+                                <li><Link to="/Monitor">Monitor</Link></li>
                                 <li><Link to="/keyboard">Keyboard</Link></li>
                             </ul>
                         </li>
-                        <li><Link to="/new-arrivals">New Arrivals</Link></li>
+                        <li><Link to="/Newarr">New Arrivals</Link></li>
                         <li><Link to="/discounts">Discounts</Link></li>
                         <li><Link to="/contact">Contact Us</Link></li>
                     </ul>

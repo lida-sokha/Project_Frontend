@@ -9,41 +9,27 @@ function Body() {
         <div class="landing-page">
             <img src="fontend/fwebp.webp" alt="Image"/>
             <div class="option">
-            <Link to="LaptopPage" className="category-card">
-                <div>
-                    <img src="fontend/h175.png" alt="Laptops" />
+            <Link to="Laptop" className="category-card">
+                <div >
+                    <img src="fontend/h175.png" alt="Image" />
                     <p>Laptop</p>
                 </div>
-                </Link>
-                <Link to="/products/desktops" className="category-card">
+            </Link> 
+            <Link to="Desktop" className="category-card">  
                 <div>
-                    <img 
-                    src="fontend/custom-gaming-pc.png" 
-                    style={{ width: "150px" }} 
-                    alt="Desktops" 
-                    />
+                    <img src="fontend/custom-gaming-pc.png" style={{ width: "150px" }} alt="Image" />
                     <p>Desktop</p>
                 </div>
-                </Link>
-                {/* <div>
+            </Link> 
+            <Link to="Monitor" className="category-card">
+                <div>
                     <img src="fontend/monitor_landing.png" alt="Image" />
                     <p>Monitor</p>
-                </div> */}
-                <Link to="/products/monitors" className="category-card">
-                <div>
-                    <img src="fontend/monitor_landing.png" alt="Monitors" />
-                    <p>Monitor</p>
                 </div>
-                </Link>
-
-                 {/* Keyboard Category */}
-                <Link to="/products/keyboards" className="category-card">
+            </Link> 
+            <Link to="Keyboard" className="category-card">
                 <div>
-                    <img 
-                    src="fontend/keyboard_3.jpg" 
-                    alt="Keyboards" 
-                    style={{ marginTop: "40px", marginBottom: "35px" }}
-                    />
+                    <img src="fontend/keyboard_3.jpg" alt="Image" style={{ marginTop: "40px", marginBottom: "35px" }}/>
                     <p>Keyboard</p>
                 </div>
                 </Link>
@@ -170,7 +156,8 @@ function Body() {
                         <div class="row-span-2 flex gap-4">
                             <div class="flex-1 relative overflow-hidden shadow-md h-[280px] bg-black">
                                 <img 
-                                src="fontend\https___medias-p1.phoenix.razer.com_sys-master-phoenix-images-container_h23_hee_9821719920670_241001-basilisk-v3-pro-35k-1500x1000-2.jpg" 
+                                // src="fontend\https___medias-p1.phoenix.razer.com_sys-master-phoenix-images-container_h23_hee_9821719920670_241001-basilisk-v3-pro-35k-1500x1000-2.jpg" 
+                                src="https://assets2.razerzone.com/images/pnx.assets/c576a2204094a7fae6faac108107bf4b/razer-basilisk-v3-pro-35k-hero-mobile.webp"
                                 alt="Razer Basilisk V3 Pro" 
                                 class="absolute inset-0 w-full h-full object-cover"
                                 />

@@ -12,6 +12,10 @@ import MacbookProM4  from './components/MacbookProM4';
 import { CartProvider } from './components/CartContext';
 import Checkout from './components/Checkout';
 import Laptop from './components/Laptop';
+import KeyboardPage from './components/keyboardPage';
+import Desktop from './components/Desktop';
+import Monitor from './components/monitor';
+
 
 
 // Layout for auth pages (without header/footer)
@@ -41,6 +45,9 @@ function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/Laptop" element={<Laptop />} />
+              <Route path="/keyboard" element={<KeyboardPage />} />
+              <Route path="/Desktop" element={<Desktop/>} />
+              <Route path="/Monitor" element={<Monitor/>} />
               {/* Add other routes that need Navbar/Footer */}
             </Routes>
             <Footer />
