@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTruck, faHeadset, faStore } from '@fortawesome/free-solid-svg-icons';
 import React from "react";
+import { Link } from "react-router-dom";
 function Body() {
     return (
         <div class="landing-page">
@@ -28,11 +29,14 @@ function Body() {
             <div class="discounts">
                 <h1 className="text-2xl font-bold">Discounts</h1>
                 <div class="discounts-container ">
-                    <div className="discount-item">
-                            <img src="fontend\MAC-14-M4-black-330x409.jpg" />
-                            <h4>MacBook Air 13 ( M2 Chip / 16GB / SSD 256GB /13.6")</h4>
-                            <p style={{ color: "red"}}>$919.00</p> <p style={{ textDecoration: "line-through"}}>$1049.00</p>
+                        <Link to="/MacbookProM4" className="discount-item">
+                        <img src="fontend/MAC-14-M4-black-330x409.jpg" alt="MacBook Pro 14 M4" />
+                        <h4>MacBook Pro 14 (M4 / 16GB / SSD 512GB / 14.2")</h4>
+                        <div style={{ display: 'flex', gap: '8px' }}>
+                        <p style={{ color: "red" }}>$1599.00</p>
+                        <p style={{ textDecoration: "line-through" }}>$1639.00</p>
                         </div>
+                        </Link>
                     <div className="discount-item">
                         <img src="fontend\mac M2 Grey-330x409.jpg" style={{width: "180px",marginTop: "30px"}}/>
                         <h4>MacBook Air 13 ( M2 Chip / 16GB / SSD 256GB /13.6")</h4>

@@ -8,6 +8,8 @@ import './components/Body.css';
 import Footer from './components/Footer';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import MacbookProM4  from './components/MacbookProM4';
+import { CartProvider } from './components/CartContext';
 
 // Layout for auth pages (without header/footer)
 const AuthLayout = () => (
@@ -22,6 +24,7 @@ const AuthLayout = () => (
 
 function App() {
   return (
+    <CartProvider>
     <Router>
       <Routes>
         {/* Main routes with Navbar and Footer */}
@@ -30,6 +33,7 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Body />} />
+              <Route path="/MacbookProM4" element={<MacbookProM4 />} />
               <Route path="/cart" element={<Cart />} />
               {/* Add other routes that need Navbar/Footer */}
             </Routes>
@@ -43,6 +47,7 @@ function App() {
         <Route path="signup" element={<Signup />} />
       </Routes>
     </Router>
+   </CartProvider>
   );
 }
 
