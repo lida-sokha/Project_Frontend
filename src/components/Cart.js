@@ -65,14 +65,7 @@ function Cart() {
             <span>Subtotal</span>
             <span>${subtotal.toFixed(2)}</span>
           </div>
-          <div className="flex justify-between">
-            <span>Discount</span>
-            <span>-${discount.toFixed(2)}</span>
-          </div>
-          <div className="flex justify-between font-bold text-lg pt-2">
-            <span>Grand Total</span>
-            <span>${grandTotal.toFixed(2)}</span>
-          </div>
+          
         </div>
       </div>
 
@@ -88,9 +81,10 @@ function Cart() {
             Apply
           </button>
         </div>
-        <button className="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 font-bold">
+        {/* In your Cart component, replace the checkout button with: */}
+        <Link to="/checkout" className="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 font-bold block text-center">
           Check out
-        </button>
+        </Link>
       </div>
     </div>
   );

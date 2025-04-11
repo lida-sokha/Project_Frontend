@@ -10,6 +10,7 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import MacbookProM4  from './components/MacbookProM4';
 import { CartProvider } from './components/CartContext';
+import Checkout from './components/Checkout';
 
 // Layout for auth pages (without header/footer)
 const AuthLayout = () => (
@@ -34,7 +35,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Body />} />
               <Route path="/MacbookProM4" element={<MacbookProM4 />} />
+              <Route path="/checkout" element={<Checkout />} />
               <Route path="/cart" element={<Cart />} />
+              <Route path="/checkout" element={<Checkout />} />
               {/* Add other routes that need Navbar/Footer */}
             </Routes>
             <Footer />
