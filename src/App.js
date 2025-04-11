@@ -15,6 +15,7 @@ import Laptop from './components/Laptop';
 import KeyboardPage from './components/keyboardPage';
 import Desktop from './components/Desktop';
 import Monitor from './components/monitor';
+import Narrival from './components/Narrival';
 
 
 
@@ -48,6 +49,7 @@ function App() {
               <Route path="/keyboard" element={<KeyboardPage />} />
               <Route path="/Desktop" element={<Desktop/>} />
               <Route path="/Monitor" element={<Monitor/>} />
+              <Route path="/Narrival" element={<Narrival/>} />
               {/* Add other routes that need Navbar/Footer */}
             </Routes>
             <Footer />

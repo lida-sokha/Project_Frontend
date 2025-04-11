@@ -54,7 +54,7 @@ function Navbar() {
                                 <li><Link to="/keyboard">Keyboard</Link></li>
                             </ul>
                         </li>
-                        <li><Link to="/Newarr">New Arrivals</Link></li>
+                        <li><Link to="/Narrival">New Arrivals</Link></li>
                         <li><Link to="/discounts">Discounts</Link></li>
                         <li><Link to="/contact">Contact Us</Link></li>
                     </ul>
