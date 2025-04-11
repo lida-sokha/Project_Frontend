@@ -48,7 +48,7 @@ function Navbar() {
                         <li><Link to="/">Home</Link></li>
                         <li className="dropdown"><Link to="#">Shop </Link>
                             <ul className="dropdown-content">
-                                <li><Link to="/laptop">Laptop</Link></li>
+                                <li><Link to="/laptop_page">Laptop</Link></li>
                                 <li><Link to="/desktop">Desktop</Link></li>
                                 <li><Link to="/monitor">Monitor</Link></li>
                                 <li><Link to="/keyboard">Keyboard</Link></li>
