@@ -41,10 +41,12 @@ function keyboardPage() {
                 <h1  className="text-2xl font-bold">ASUS key board</h1>
                 <div className="popular_product">
                         <div className="popular_product-item">
+                            <Link to="/AsusrogII">
                             <img src="fontend/key-asus1.png"/>
                             <p style={{color:"gray"}}>Asus ROG Claymore II TKL 80% / 100%
                             GAMING KEYBOARD </p>
                             <p>$205.00</p>
+                            </Link>
                         </div>
                         <div className="popular_product-item">
                             <img src="fontend/key-asus2.png"/>

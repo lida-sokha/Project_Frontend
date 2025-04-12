@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom'; 
 function Laptop() {
     return (
-        <div class="landing-page">
+        <div className="landing-page ">
             <Link to="/Laptop"></Link>
             <img src="fontend/1.png" alt="Image"/>
             <div className="popular">
@@ -14,9 +14,11 @@ function Laptop() {
                             <p>$1000.00</p>
                         </div>
                         <div className="popular_product-item">
-                            <img src="fontend/3.jpg"/>
+                        <Link to="/AsusS16" className="product-link">
+                            <img src="fontend\3.jpg" alt="Asus Zenbook S 16" />
                             <p style={{color:"gray"}}>Asus Zenbook S 16 UM5606KA-RK061W</p>
                             <p>$1,299.00</p>
+                        </Link>
                         </div>
                         <div className="popular_product-item">
                             <img src="fontend/4.jpg"/>

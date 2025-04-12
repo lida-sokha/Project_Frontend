@@ -16,8 +16,12 @@ import KeyboardPage from './components/keyboardPage';
 import Desktop from './components/Desktop';
 import Monitor from './components/monitor';
 import Narrival from './components/Narrival';
-import Discounts from './components/promot';
-
+import Discounts from './components/Discounts';
+import AsusS16 from './components/AsusS16';
+import IMac from './components/IMac24';
+import AsusTuf24 from './components/Asustuf24';
+import Asusrogii from './components/AsusrogII';
+import ContactUs from './components/ContactUs';
 
 
 // Layout for auth pages (without header/footer)
@@ -52,6 +56,11 @@ function App() {
               <Route path="/Monitor" element={<Monitor/>} />
               <Route path="/Narrival" element={<Narrival/>} />
               <Route path="/Discounts" element={<Discounts/>} />
+              <Route path="/AsusS16" element={<AsusS16/>} />
+              <Route path="/IMac" element={<IMac/>} />
+              <Route path="/Asustuf24" element={< AsusTuf24/>} />
+              <Route path="/AsusrogII" element={< Asusrogii/>} />
+              <Route path="/ContactUs" element={< ContactUs/>} />
               {/* Add other routes that need Navbar/Footer */}
             </Routes>
             <Footer />

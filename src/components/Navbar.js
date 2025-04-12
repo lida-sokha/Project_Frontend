@@ -9,7 +9,7 @@ function Navbar() {
         <>
             <header>
                 <div className="top-bar">
-                    <div className="logo-container">
+                    <div className="logo-container ml-20">
                         <div className="tc-box">
                     <Link to="/" className="logo-link">
                             <div className="tc-text">TC</div>
@@ -56,7 +56,7 @@ function Navbar() {
                         </li>
                         <li><Link to="/Narrival">New Arrivals</Link></li>
                         <li><Link to="/discounts">Discounts</Link></li>
-                        <li><Link to="/contact">Contact Us</Link></li>
+                        <li><Link to="/ContactUs">Contact Us</Link></li>
                     </ul>
                 </nav>
             </header> {/* Closed header */}

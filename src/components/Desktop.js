@@ -13,9 +13,11 @@ function Desktop() {
                 <h1  className="text-2xl font-bold">IMac</h1>
                 <div className="popular_product">
                         <div className="popular_product-item">
+                            <Link to="/iMac" className="product-link">
                             <img src="fontend/a.jpg"/>
                             <p style={{color:"gray"}}>iMac 24" 4.5K ( M4 / 16GB / SSD 1TB / 24"4.5K )</p>
-                            <p>$1000.00</p>
+                            <p>$2,059.00</p>
+                            </Link>
                         </div>
                         <div className="popular_product-item">
                             <img src="fontend/b.jpg"/>
